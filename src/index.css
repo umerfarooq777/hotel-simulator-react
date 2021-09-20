@@ -1,13 +1,257 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header {
+  height: 150px;
+  background-color: #0a1d37;
+}
+
+.parrafo {
+  color: white;
+}
+
+.title {
+  margin-left: 60px;
+  padding: 20px 0px 0px 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 10px;
+}
+
+.parrafo {
+  color: white;
+  margin-left: 90px;
+  padding-top: 10px;
+}
+
+.nav-bar {
+  height: 100%;
+  background-color: #cc6733;
+  box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.486);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.div-filter {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-filter {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: rgba(128, 128, 128, 0.541);
+  padding-left: 2px;
+}
+
+.input {
+  border: 3px solid white;
+  border-radius: 7px;
+  padding-left: 27px;
+}
+
+.select {
+  left: 5px;
+  border: 3px solid white;
+  border-radius: 7px;
+  height: 27px;
+  width: 160px;
+  padding-left: 27px;
+}
+
+form nav button {
+  width: 40px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icon-trash {
+  color: white;
+  font-size: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.card {
+  border: 1px solid rgba(119, 119, 119, 0.479);
+  width: 300px;
+  height: 670px;
+  margin: 50px 10px 0px 10px;
+  position: relative;
+}
+
+.container-img {
+  height: 300px;
+  width: 100%;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  margin: 20px 0px;
+}
+
+.container-info {
+  margin: 0px 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.location-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  margin: 20px 0px 5px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.location-card img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.info-room-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-room {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  margin: 20px 0px 10px 0px;
+  font-size: 13px;
+  border-left: 2px solid #cc6733;
+  width: 170px;
+  font-weight: bold;
+}
+
+.icon-room {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+
+.info-price {
+  height: 30px;
+  text-align: center;
+  border-left: 2px solid #cc6733;
+  width: 70px;
+  margin: 7px 0px 0px 20px;
+  padding-top: 3px;
+}
+
+.info-price span {
+  font-size: 8px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.price-disabled {
+  color: rgba(128, 128, 128, 0.507);
+}
+
+.red {
+  color: red;
+}
+
+.button {
+  margin-top: 7px;
+  border: none;
+  background-color: #cc6733;
+  width: 100%;
+  height: 6%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+}
+
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: #cc6733;
+}
+
+i {
+  width: 25px;
+  height: 25px;
+  margin: 0px 5px;
+}
+
+.fa-dollar-sign {
+  margin: 0px;
+  width: 8px;
+}
+
+.info-room span {
+  margin-right: 10px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 80%;
+  height: 80px;
+  background-color: #0a1d37;
+  color: white;
+}
+
+.error p {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.icon-error {
+  font-size: 40px;
+  color: #cc6733;
+}
+
+@media screen and (max-width: 400px) {
+  .nav-bar {
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+  }
+  .main-container {
+    flex-direction: column;
+  }
 }
