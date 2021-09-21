@@ -1,4 +1,14 @@
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faSignInAlt, 
+  faSignOutAlt,
+  faGlobe,
+  faBed,
+  faDollarSign,
+  faTrash 
+} from '@fortawesome/free-solid-svg-icons';
+
 function Form({
   lugar,
   precio,
@@ -48,11 +58,11 @@ function Form({
               className="input"
               onChange={cambiarFechaDesde}
             />
-            
+            <FontAwesomeIcon icon={faSignInAlt} className="icon-filter"/>
           </div>
           <div className="div-filter">
             <input type="date" className="input" onChange={cambiarFechaHasta} />
-            
+            <FontAwesomeIcon icon={faSignOutAlt} className="icon-filter"/>
           </div>
           <div className="div-filter">
             <select
@@ -68,7 +78,7 @@ function Form({
               <option value="chile">Chile</option>
               <option value="uruguay">Uruguay</option>
             </select>
-           
+            <FontAwesomeIcon icon={faGlobe} className="icon-filter"/>
           </div>
           <div className="div-filter">
             <select
@@ -86,7 +96,7 @@ function Form({
               <option value="3">$$$</option>
               <option value="4">$$$$</option>
             </select>
-            
+            <FontAwesomeIcon icon={faDollarSign} className="icon-filter"/>
           </div>
           <div className="div-filter">
             <select
@@ -103,13 +113,16 @@ function Form({
               <option value="mediano">Mediano</option>
               <option value="grande">Grande</option>
             </select>
-            
+            <FontAwesomeIcon icon={faBed} className="icon-filter"/>
           </div>
           <button onClick={resetearFormulario}></button>
+          <FontAwesomeIcon icon={faTrash} className="icon-trash"/>
         </nav>
       </form>
     </>
   );
 }
+
+
 
 export default Form;

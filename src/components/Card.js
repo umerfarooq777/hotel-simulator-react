@@ -1,5 +1,8 @@
 import React from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+   faBed
+} from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ hotel }) => {
   return (
@@ -18,6 +21,7 @@ const Card = ({ hotel }) => {
         </div>
         <div className="info-room-price">
           <div className="info-room">
+          <FontAwesomeIcon icon={faBed} className="icon-room"/>
             {hotel.rooms} Habitaciones
           </div>
           <div className="info-price">

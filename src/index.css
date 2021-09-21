@@ -86,6 +86,8 @@ form nav button {
 .icon-trash {
   color: white;
   font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .main-container {
