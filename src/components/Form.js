@@ -115,8 +115,9 @@ function Form({
             </select>
             <FontAwesomeIcon icon={faBed} className="icon-filter"/>
           </div>
-          <button onClick={resetearFormulario}></button>
+          <button onClick={resetearFormulario}>
           <FontAwesomeIcon icon={faTrash} className="icon-trash"/>
+          </button>
         </nav>
       </form>
     </>
